@@ -1,0 +1,41 @@
+{
+  "name": "terraform-repo-template",
+  "private": true,
+  "scripts": {
+    "commit": "./node_modules/cz-customizable/standalone.js",
+    "prepare": "husky install",
+    "lint": "eslint --ext .ts,.tsx",
+    "format": "prettier --check .",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "ncu": "ncu"
+  },
+  "devDependencies": {
+    "@types/jest": "^28.1.3",
+    "cz-conventional-changelog": "3.3.0",
+    "cz-customizable": "^6.9.2",
+    "husky": "^6.0.0",
+    "jest": "^28.1.3",
+    "lint-staged": "^13.0.3",
+    "npm-check-updates": "^16.0.6",
+    "ts-jest": "^28.0.8",
+    "typescript": "^4.8.2"
+  },
+  "config": {
+    "cz-customizable": {
+      "config": "config/cz-config.js"
+    }
+  },
+  "dependencies": {
+    "@types/node": "^18.7.14",
+    "@typescript-eslint/eslint-plugin": "^5.36.1",
+    "@typescript-eslint/parser": "^5.36.1",
+    "eslint": "^8.23.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.0.1",
+    "prettier": "^2.7.1"
+  }
+}

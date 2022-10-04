@@ -1,0 +1,6 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo "Executing Husky pre-commit scripts .... \n"
+yarn lint-staged
+yarn test -projects
