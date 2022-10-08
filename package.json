@@ -8,7 +8,9 @@
     "format": "prettier --check .",
     "test": "jest",
     "test:watch": "jest --watch",
-    "ncu": "ncu"
+    "ncu": "ncu",
+    "localstack": "CONFIG_DIR=./.localstack CONFIG_PROFILE=dev localstack",
+    "start": "CONFIG_DIR=./.localstack CONFIG_PROFILE=dev ./scripts/localstack-start.sh"
   },
   "devDependencies": {
     "@types/jest": "^28.1.3",

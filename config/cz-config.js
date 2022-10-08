@@ -32,7 +32,7 @@ module.exports = {
     { value: "WIP", name: "WIP:      Work in progress" },
   ],
 
-  scopes: [{ name: "TO BE CHHANGED" }],
+  scopes: [{ name: "localstack" }],
 
   allowTicketNumber: false,
   isTicketNumberRequired: false,
@@ -67,7 +67,7 @@ module.exports = {
   allowCustomScopes: true,
   allowBreakingChanges: ["feat", "fix"],
   // skip any questions you want
-  skipQuestions: ["body"],
+  // skipQuestions: ["body"],
 
   // limit subject length
   subjectLimit: 100,
